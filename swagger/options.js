@@ -3,6 +3,7 @@ const options = {
     info: {
       version: '1.0.0',
       title: 'Node Backend',
+      description: "An express backend with an architecture focus on microservices.",
       license: {
         name: "ISC",
       },

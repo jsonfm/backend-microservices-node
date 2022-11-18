@@ -39,6 +39,12 @@ function get(req, res) {
     
 }
 
+/**
+ * POST /api/v1/user/
+ * @summary Create a new user
+ * @param {data} request.body.required - user info
+ * @return {object} 200 - success response
+ */
 function upsert(req, res) {
     Controller.upsert(req.body)
         .then((user) => {
