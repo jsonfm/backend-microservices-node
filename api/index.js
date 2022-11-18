@@ -8,9 +8,9 @@ const app = express();
 swaggerDocs(app);
 
 // routers
-app.use('/api/user', user)
+app.use('/api/v1/user', user)
 
 
 app.listen(config.PORT, () => {
-    console.log(`Listening on port ${config.PORT}`);
+    console.log(`Listening on port http://localhost:${config.PORT}`);
 });

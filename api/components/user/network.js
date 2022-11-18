@@ -12,6 +12,11 @@ router.post('/', upsert);
 router.put('/', upsert);
 
 // Internal functions
+/**
+ * GET /api/v1/user/
+ * @summary Get a list of users
+ * @return {object} 200 - success response
+ */
 function list(req, res) {
     Controller.list()
         .then((lista) => {
@@ -23,11 +28,6 @@ function list(req, res) {
     
 }
 
-/**
- * GET /api/v1
- * @summary This is the summary of the endpoint
- * @return {object} 200 - success response
- */
 function get(req, res) {
     Controller.get(req.params.id)
         .then((user) => {

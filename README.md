@@ -14,6 +14,9 @@ DB_NAME=SOME_NAME
 DB_USER=SOME_USER
 ```
 
+### 📄 Docs
+Docs are available with Swagger UI on `/api/v1/docs/`.
+
 ### ⚡️ Development
 For execute the project with `nodemon` run the following command:
 ```
